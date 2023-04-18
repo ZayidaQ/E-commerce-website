@@ -65,6 +65,10 @@ p{
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #96b3f2;
 }
 .header{
     background: radial-gradient(#BECFF4, #fff)
