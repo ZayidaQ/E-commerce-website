@@ -86,6 +86,8 @@ p{
 .header .row{
     margin-top: 70px;
 }
+/* ----- End Of Navigation ----- */
+
 
 /* ----- Featured Catagories -----*/
 .categories{
@@ -105,4 +107,17 @@ p{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+}
+/* ----- End Of Featured Catagories -----*/
+
+
+/*----- Featured Products -----*/
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 img{
+    width: 100%;
 }
