@@ -42,10 +42,10 @@ p{
 }
 .container{
     max-width: 1300px;
-    margin:auto;
+    margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    
+
 }
 .row{
     display: flex;
@@ -76,10 +76,10 @@ p{
     transition: 0.5s;
 }
 .btn:hover{
-    background: #96b3f2;
+    background: #789ef0;
 }
 .header{
-    background: radial-gradient(#BECFF4, #fff)
+    background: radial-gradient(#fff, #e7eaf1)
 }
 .header .row{
     margin-top: 70px;
