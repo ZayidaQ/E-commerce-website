@@ -19,6 +19,13 @@ body{
     align-items: center;
     padding: 20px;
 }
+.logo-image{
+    width: 150px;
+}
+.cart-image{
+    width: 25px;
+    height: 25px;
+}
 nav{
     flex:1;
     text-align:right;
@@ -40,6 +47,8 @@ a{
 p{
     color:#555;
 }
+
+
 
 /**/
 .container{
@@ -166,7 +175,7 @@ small{
     color:#555
 }
 
-/*----Reviews*/
+/*----Reviews----*/
 .review{
     padding-top: 100px;
 }
@@ -190,3 +199,14 @@ small{
     font-size: 34px;
     color: #3c548a;
 }
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.review .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
