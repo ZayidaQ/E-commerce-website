@@ -118,6 +118,7 @@ p{
     min-width: 200px;
     margin-bottom: 50px;
     padding-top: 30px;
+    transition: transform 0.5s;
 }
 .col-4 img{
     width: 100%;
@@ -128,4 +129,27 @@ p{
     position: relative;
     line-height: 60px;
     color: #555;
+}
+.title::after{
+    content: "";
+    background: #BECFF4;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating{
+    color: #3c548a;
+}
+.col-4:hover{
+    transform: translateY(-5px);
 }
