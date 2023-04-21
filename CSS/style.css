@@ -163,7 +163,7 @@ h4{
     transform: translateY(-5px);
 }
 
-/*-----Offer-----*/
+/*----- Offer -----*/
 .offer{
     background: radial-gradient(#fff, #e7eaf1);
     margin-top: 80px;
@@ -179,7 +179,7 @@ small{
     color:#555;
 }
 
-/*----Reviews----*/
+/*---- Reviews ----*/
 .review{
     padding-top: 100px;
 }
@@ -214,7 +214,7 @@ small{
     font-size: 16px;
 }
 
-/*-----footer-----*/
+/*----- Footer -----*/
 .footer{
     background: #152238;
     color: #cccccc;
@@ -273,7 +273,7 @@ ul{
     margin-left: 20px;
     display: none;
 }
-/*----- media query for menu -----*/
+/*----- Media Query For Menu -----*/
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
@@ -298,7 +298,44 @@ ul{
         cursor: pointer;
     }
 }
-/*----- media query for less than 600 screen size-----*/
+
+/*----- All Products Page -----*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #789ef0;
+    padding: 5px;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #789ef0;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #789ef0;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/*----- Media Query For Less Than 600 Screen Size -----*/
 @media only screen and (max-width: 600px){
     .row{
         text-align: center;
