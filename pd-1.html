@@ -42,19 +42,19 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="images/product-1.jpg " alt="product-img" id="product-img">
+                <img src="images/product-1.jpg " alt="product-img" id="ProductImg">
                 <div class="small-img-row">
                     <div class="small-img-col">
-                        <img src="images/product-1.jpg" alt="p1.0">
+                        <img src="images/product-1.jpg" alt="p1.0" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images/img/product-1.1.jpg" alt="p1.1">
+                        <img src="images/img/product-1.1.jpg" alt="p1.1" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images/img/product-1.4.jpg" alt="p1.4">
+                        <img src="images/img/product-1.4.jpg" alt="p1.4" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images/img/product-1.5.jpg" alt="p1.5">
+                        <img src="images/img/product-1.5.jpg" alt="p1.5" class="small-img">
                     </div>
                 </div>
             </div>
@@ -207,6 +207,14 @@
         }
 
     </script>
+
+<!--js for product gallery-->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img")
+
+        SmallImg[0].onclick = funtion()
+</script>
 <!-- Link to Font Awesome -->
 <script src="https://kit.fontawesome.com/ce521e0b44.js" crossorigin="anonymous"></script>
 </body>
