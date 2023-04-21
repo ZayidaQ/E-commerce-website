@@ -17,10 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" type="text/css">
 
   </head>
-  <body>
+  <body class="bg-light" style="min-height: 2000px">
     <div class="container">
       <div class="py-5 text-center">
-        <img class="mb4 d-block mx-auto" src="images/logo.png"  alt="logo" width="300px" >
+        <a href="index.html"><img class="mb4 d-block mx-auto" src="images/logo.png"  alt="logo" width="300px"></a>
         <hr>
         <h2>Checkout</h2>
         <p class="lead">Thank you for shopping with us!</p>
@@ -136,7 +136,7 @@
         <div class="row my-3 gy-3">
 
           <div class="col-md-6 pt-1">
-            <label for="fullname">
+            <label for="fullname" class="form-label">
               Name on Card
             </label>
             <input id="fullName" type="text" class="form-control">
@@ -149,17 +149,42 @@
           </div>
           
           <div class="col-md-6 pt-1">
-            Credit Card Number
-            <input type="text" class="form-control">
+            <label for="cc-number" class="form-label">
+              Credit Card Number
+            </label>
+            <input id="cc-number" type="text" class="form-control">
             <div class="invalid-feedback">
               Credit Card number is required.
             </div>
           </div>
+
+          <div class="col-md-3 pt-1">
+            <label for="cc-expire" class="form-label">
+              Expiration
+            </label>
+            <input id="cc-expire" type="text" class="form-control">
+            <div class="invalid-feedback">
+              Expiration is required.
+            </div>
+          </div>
+
+          <div class="col-md-3 pt-1">
+            <label for="cc-cvv" class="form-label">
+              CVV
+            </label>
+            <input id="cc-cvv" type="text" class="form-control">
+            <div class="invalid-feedback">
+              CVV is required.
+            </div>
+          </div>
         </div>
 
+        <hr class="my-4">
 
+        <button class="btn btn-primary btn-lg btn-block">
+          continue to checkout 
+        </button>
 
-        </div>
       </form>
     </div>
 
