@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>All Products - Urban Furnishing</title>
+
+    <!--Link to external link-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Link to google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" type="text/css">
+
+    
+</head>
+<body>
+    <!--Header-->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt="logo" class="logo-image"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <a href=""><img src="images/cart.png" alt="Cart" class="cart-image"></a>
+                <img src="images/menu.png" alt="menu bar" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <!--End Of Header-->
+
+    <!-- Products-->
+    <div class="small-container">
+        <div class="row">
+            <h2>All Products</h2>
+            <select id="sort" name="sort">
+                <option value="defult">Default sorting</option>
+                <option value="price">Price: Low to High </option>
+                <option value="popularity">Price: High to Low</option>
+                <option value="rating">Best Sellers</option>
+                <option value="sale">Sales</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href=""><img src="images/product-1.jpg" alt="sofa"></a>
+                <h4>FINNALAh</h4>
+                <p>sofa, medium gray</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>102,950 reviews</p>
+                    </div>
+                <p><b>$1,800.00</b></p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="images/product-2.jpg" alt="lamp"></a>
+                <h4>VARMBLIXT</h4>
+                <p>LED pendant lamp</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p>1,620 reviews</p>
+                    </div>
+                <p><b>$260.00</b></p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="images/product-3.jpg" alt="tv unit"></a>
+                <h4>BRIMNES</h4>
+                <p>TV unit, black</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>3,950 reviews</p>
+                    </div>
+                <p><b>$459.99</b></p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="images/product-4.jpg" alt="mirror"></a>
+                <h4>IKORNNES</h4>
+                <p>floor mirror</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <p>76,950 reviews</p>
+                    </div>
+                <p><b>$179.99</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Available for both Android and IOS! </p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" alt="applestore">
+                            <img src="images/play-store3.png" alt="googleplay">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo1.PNG" alt="logo image">
+                        <p>
+                            Our primary objective as a business is to ensure customer satisfaction by 
+                            offering high-quality furniture that is both satisfactory and affordable.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2023 - Zayida Q</p>
+            </div>
+        </div>
+    </footer>
+
+<!--js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+    
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                MenuItems.style.maxHeight = "0px";
+                }
+        }
+
+    </script>
+<!-- Link to Font Awesome -->
+<script src="https://kit.fontawesome.com/ce521e0b44.js" crossorigin="anonymous"></script>
+</body>
+</html>
