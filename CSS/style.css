@@ -437,8 +437,8 @@ th:last-child{
     background: radial-gradient(#fff, #e7eaf1);
 }
 .account-page img{
-    width: 500px;
-    height: 600px;
+    margin-top: 60px;
+    width: 100%;
 }
 .form-container{
     background: #fff;
@@ -449,6 +449,7 @@ th:last-child{
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow-y: hidden;
 }
 
 .form-container span{
@@ -467,6 +468,7 @@ th:last-child{
     padding: 0 20px;
     position: absolute;
     top: 130px;
+    transition: transform 1s;
 }
 form input{
     width: 100%;
@@ -494,6 +496,19 @@ form .btn:focus{
 form a{
     font-size: 12px;
 }
+#indicator{
+    width: 100px;
+    border: none;
+    background: #789ef0;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+
+
 
 
 /*----- Media Query For Less Than 600 Screen Size -----*/

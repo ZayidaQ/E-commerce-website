@@ -21,18 +21,18 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href=""><img src="images/logo.png" alt="logo" class="logo-image"></a>
+                    <a href="index.html"><img src="images/logo.png" alt="logo" class="logo-image"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">Products</a></li>
+                        <li><a href="product.html">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="">Account</a></li>
+                        <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-                <a href=""><img src="images/cart.png" alt="Cart" class="cart-image"></a>
+                <a href="cart.html"><img src="images/cart.png" alt="Cart" class="cart-image"></a>
                 <img src="images/menu.png" alt="menu bar" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
@@ -43,14 +43,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="images/product-10.jpg" alt="mainpagephoto">
+                    <img src="images/accountpic.jpeg" alt="mainpagephoto">
                 </div>
 
                 <div class="col-2">
                     <div class="form-container">
                         <div class="form-btn">
-                            <span>Login</span>
-                            <span>Register</span>
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
                         </div>
 
                         <form id="LoginForm" action="">
@@ -136,6 +137,27 @@
         }
 
     </script>
+
+<!--js for toggle for-->
+    <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var indicator = document.getElementById("indicator");
+
+            function register(){
+                RegForm.style.transform = "translatex(0px)";
+                LoginForm.style.transform = "translatex(0px)";
+                indicator.style.transform = "translatex(100px)";
+            }
+            function login(){
+                RegForm.style.transform = "translatex(300px)";
+                LoginForm.style.transform = "translatex(300px)";
+                indicator.style.transform = "translatex(0px)";
+            }
+
+    </script>
+
 <!-- Link to Font Awesome -->
 <script src="https://kit.fontawesome.com/ce521e0b44.js" crossorigin="anonymous"></script>
 </body>
