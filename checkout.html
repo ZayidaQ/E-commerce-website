@@ -7,12 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>All Products - Urban Furnishing</title>
-
     <!--Link to external link-->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/checkout.css">
+
+    <title>All Products - Urban Furnishing</title>
 
     <!-- Link to google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" type="text/css">
@@ -20,13 +19,148 @@
   </head>
   <body>
     <div class="container">
-      <div class="py-5 d-block mx-auto text-center">
-        <img class="mb4 logo-image" src="images/logo.png" alt="logo" class="">
-        <br>
-        <br>
+      <div class="py-5 text-center">
+        <img class="mb4 d-block mx-auto" src="images/logo.png"  alt="logo" width="300px" >
+        <hr>
         <h2>Checkout</h2>
-        <p>below is made with bootstrap</p>
+        <p class="lead">Thank you for shopping with us!</p>
+        <hr>
       </div>
+    </div>
+
+
+    <div class="container">
+      <h4 class="mb-3">Billing Address</h4>
+      <form novalidate>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input id="firstName" type="text" class="form-control" placeholder="Jonathan" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input id="lastName" type="text" class="form-control" placeholder="Arellano" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+          </div>
+
+          <div class="col-12 pt-3">
+            <label for="Username" class="form-label">Username</label>
+            <div class="input-group">
+              <span class="input-group-text">@</span>
+              <input id="Username" type="text" class="form-control" placeholder="Jona17" required>
+            </div>
+            <div class="invalid-feedback">
+              Valid username is required.
+            </div>
+          </div>
+
+          <div class="col-md-5 pt-3">
+            <label for="country" class="form-label">Country</label>
+            <select id="Username" class="form-control">
+              <option value="">Choose...</option>
+              <option value="US">United States</option>
+              <option value="canada">Canada</option>
+              <option value="mexico">Mexico</option>
+              <option value="Japan">Japan</option>
+              <option value="china">China</option>
+              <option value="Russia">Russia</option>
+              <option value="india">India</option>
+            </select>
+              <div class="invalid-feedback">
+                required.
+              </div>
+          </div>
+          <div class="col-md-4 pt-3">
+            <label for="country" class="form-label">State</label>
+            <select id="Username" class="form-control">
+              <option value="">Choose...</option>
+              <option value="US">California</option>
+              <option value="US">Seattle</option>
+              <option value="US">NY</option>
+              <option value="US">Texas</option>
+              <option value="US">Florida</option>
+              <option value="US">Virginia</option>
+              <option value="US">Idaho</option>
+            </select>
+              <div class="invalid-feedback">
+                required.
+              </div>
+          </div>
+          <div class="col-md-3 pt-3">
+            <label for="zipcode" class="form-label">ZipCode</label>
+            <input id="zipcode" type="number" class="form-control" placeholder="12345" required>
+              <div class="invalid-feedback">
+                Valid ZipCode is required.
+              </div>
+          </div>
+        </div>
+        
+        <hr class="my-4">
+
+        <div class="col-12">
+          <div class="form-check">
+            <input id="sameadress" type="checkbox" class="form-check-input">
+            <label for="sameadress">Shipping address is the same as billing.</label>
+          </div>
+          <div class="form-check pt-0">
+              <input id="sameadress" type="checkbox" class="form-check-input">
+              <label for="sameadress">Save this info.</label>
+            </div>
+          </div>
+
+          <hr class="my-4">
+          
+          <h4 class="mb-3">Payments</h4>
+
+          <div class="form-check">
+              <input id="creditcard" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label for="creditcard">Credit Card</label>
+          </div>
+          
+          <div class="form-check">
+            <input id="creditcard" name="paymentMethod" type="radio" class="form-check-input" checked required>
+            <label for="directDebit">Direct Debit</label>
+        </div>
+
+        <div class="form-check">
+          <input id="Paypal" name="paymentMethod" type="radio" class="form-check-input" checked required>
+          <label for="Paypal">PayPal</label>
+        </div>
+
+        <div class="row my-3 gy-3">
+
+          <div class="col-md-6 pt-1">
+            <label for="fullname">
+              Name on Card
+            </label>
+            <input id="fullName" type="text" class="form-control">
+            <small class="text-muted">
+              Full name as displayed on card.
+            </small>
+            <div class="invalid-feedback">
+              Name on card is required.
+            </div>
+          </div>
+          
+          <div class="col-md-6 pt-1">
+            Credit Card Number
+            <input type="text" class="form-control">
+            <div class="invalid-feedback">
+              Credit Card number is required.
+            </div>
+          </div>
+        </div>
+
+
+
+        </div>
+      </form>
     </div>
 
 
