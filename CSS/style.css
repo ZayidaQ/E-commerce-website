@@ -223,7 +223,7 @@ small{
     margin-top: 100px;
 }
 .fooder p{
-    color: #cccccc;
+    color: #fff;
 }
 .footer h3{
     color: #fff;
@@ -505,10 +505,49 @@ form a{
     transform: translateX(100px);
     transition: transform 1s;
 }
-
-
-
-
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #e7eaf1;
+    margin-top: 50px;
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width:550px;
+}
+.family{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color:#3c548a;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color:#555;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.budget{
+    color:#789ef0;
+}
+.about-text p{
+    color:#555;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+}
 
 
 /*----- Media Query For Less Than 600 Screen Size -----*/
