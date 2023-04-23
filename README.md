@@ -8,6 +8,7 @@ Welcome to Urban Furnishings, a modern e-commerce furniture store with a concept
 
 - This website is mainly built using HTML and CSS and a little bit of JS
 - Checkout page was built using Bootstrap
+- Logo was designed and created by me
 
 ## Built With >
 * HTML
