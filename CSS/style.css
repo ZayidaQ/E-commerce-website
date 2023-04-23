@@ -451,7 +451,6 @@ th:last-child{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     overflow-y: hidden;
 }
-
 .form-container span{
     font-weight: bold;
     padding: 0 10px;
@@ -505,6 +504,8 @@ form a{
     transform: translateX(100px);
     transition: transform 1s;
 }
+
+
 .about{
     width: 100%;
     padding: 78px 0px;
